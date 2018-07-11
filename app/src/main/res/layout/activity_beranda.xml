@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5pt"
+    android:paddingRight="5pt"
+    android:paddingLeft="5pt"
+    android:paddingBottom="5pt"
+    tools:context=".Beranda">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="2"
+        app:orientation="horizontal">
+
+        <FrameLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#D2691E">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/anggur"
+                    android:src="@drawable/anggurtok"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/anggur"
+                    android:layout_centerHorizontal="true"
+                    android:text="Anggur"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#CD5C5C">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/pisang"
+                    android:src="@drawable/pisangtok"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pisang"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pisang"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>

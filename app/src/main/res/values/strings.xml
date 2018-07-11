@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Buahloka</string>
+    <string name="buahloka">BUAHLOKA</string>
+    <string name="in_email">Email</string>
+    <string name="in_pass">Password</string>
+    <string name="btn_login">MASUK</string>
+    <string name="btn_reg">Daftar</string>
+    <string name="reg_nama">Nama Lengkap</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_pass">Password</string>
+    <string name="reg_alamat">Alamat</string>
+    <string name="reg_prov">Provinsi</string>
+    <string name="reg_kota">Kota</string>
+    <string name="btn_daftar">Daftar</string>
+</resources>

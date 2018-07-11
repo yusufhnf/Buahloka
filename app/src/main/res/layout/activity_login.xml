@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="5pt"
+    android:paddingRight="5pt"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:text="@string/buahloka"
+        android:textSize="14pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50pt"
+        android:textColor="#FFFF" />
+
+    <EditText
+        android:id="@+id/in_email"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:hint="@string/in_email"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40pt"
+        android:layout_below="@id/header"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_pass"
+        android:hint="@string/in_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5pt"
+        android:layout_below="@id/in_email"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="@string/btn_login"
+        android:layout_below="@id/in_pass"
+        android:layout_marginTop="5pt"
+        android:onClick="launchMain"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reg"
+        android:text="@string/btn_reg"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="5pt"
+        android:onClick="launchReg"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
